@@ -31,18 +31,9 @@ use PrestaShopBundle\Controller\Admin\FrameworkBundleAdminController;
 use PrestaShopBundle\Security\Annotation\AdminSecurity;
 use Symfony\Component\HttpFoundation\Response;
 
-
-
-
-
-
-use Link;
-
-
-
-class DashboardTabController extends FrameworkBundleAdminController
+class FindProductsTabController extends FrameworkBundleAdminController
 {
-    const TAB_CLASS_NAME = 'AdminDemoControllerTabsDashboard';
+    const TAB_CLASS_NAME = 'AdminDemoControllerTabsFindProducts';
 
     /**
      * @AdminSecurity("is_granted('read', 'AdminDemoControllerTabsManualTab')")
@@ -51,20 +42,6 @@ class DashboardTabController extends FrameworkBundleAdminController
      */
     public function indexAction()
     {
-        $findproducts_url = Link::getUrlSmarty(array('entity' => 'sf', 'route' => 'ps_controller_tabs_findproducts'));
-        $importproducts_url = Link::getUrlSmarty(array('entity' => 'sf', 'route' => 'ps_controller_tabs_importproducts'));
-        $products_url = Link::getUrlSmarty(array('entity' => 'sf', 'route' => 'ps_controller_tabs_products'));
-        $settings_url = Link::getUrlSmarty(array('entity' => 'sf', 'route' => 'ps_controller_tabs_settings'));
-        $dashboard_url = Link::getUrlSmarty(array('entity' => 'sf', 'route' => 'ps_controller_tabs_dashboard'));
-
-        return $this->render('@Modules/democontrollertabs/views/templates/admin/dashboard.html.twig',
-        [
-            'link_find' => $findproducts_url,
-            'link_import' => $importproducts_url,
-            'link_products' => $products_url,
-            'link_settings' => $settings_url,
-            'link_dashboard' => $dashboard_url,
-        ]
-    );
+        return $this->render('@Modules/democontrollertabs/views/templates/admin/findproducts.html.twig');
     }
 }

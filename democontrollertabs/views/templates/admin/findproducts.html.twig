@@ -1,0 +1,23 @@
+{#**
+ * Copyright since 2007 PrestaShop SA and Contributors
+ * PrestaShop is an International Registered Trademark & Property of PrestaShop SA
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License 3.0 (AFL-3.0).
+ * It is also available through the world-wide-web at this URL: https://opensource.org/licenses/AFL-3.0
+ *#}
+
+{% extends '@Modules/democontrollertabs/views/templates/admin/layout.html.twig' %}
+
+{% block controllerTitle %}{{ 'Find Products'|trans({}, 'Modules.Controllertab.Admin') }}{% endblock %}
+
+{% block controllerDescription %}
+    <div class="row justify-content-center">
+        <div class="col">
+            <p>
+            <ul data-v-0f8356ce="" class="nav nav-pills"><li class="nav-item"><a href="/dashboard_ali" class="nav-link"> Home </a></li><li class="nav-item"><a href="/imports" class="nav-link"> Elenco Importazioni </a></li><li class="nav-item" data-v-0f8356ce=""><a href="/prodotti" aria-current="page" class="nav-link"> Prodotti </a></li><li class="nav-item" data-v-0f8356ce=""><a href="/trovaprodotti" class="nav-link"> Trova Prodotti </a></li><li class="nav-item" data-v-0f8356ce=""><a href="/impostazioni" class="nav-link"> Impostazioni </a></li></ul>
+            </p>
+        </div>
+    </div>
+{% endblock %}

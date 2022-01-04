@@ -31,3 +31,29 @@ ps_controller_tabs_dashboard:
     methods: [GET]
     defaults:
         _controller: 'PrestaShop\Module\DemoControllerTabs\Controller\Admin\DashboardTabController::indexAction'
+
+
+ps_controller_tabs_findproducts:
+    path: /find_products_ali
+    methods: [GET]
+    defaults:
+        _controller: 'PrestaShop\Module\DemoControllerTabs\Controller\Admin\FindProductsTabController::indexAction'
+
+
+ps_controller_tabs_importproducts:
+    path: /import_products_ali
+    methods: [GET]
+    defaults:
+        _controller: 'PrestaShop\Module\DemoControllerTabs\Controller\Admin\ImportTabController::indexAction'
+
+ps_controller_tabs_settings:
+    path: /settings_ali
+    methods: [GET]
+    defaults:
+        _controller: 'PrestaShop\Module\DemoControllerTabs\Controller\Admin\SettingsTabController::indexAction'
+
+ps_controller_tabs_products:
+    path: /products_ali
+    methods: [GET]
+    defaults:
+        _controller: 'PrestaShop\Module\DemoControllerTabs\Controller\Admin\ProductsTabController::indexAction'

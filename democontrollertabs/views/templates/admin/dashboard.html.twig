@@ -15,16 +15,8 @@
 {% block controllerDescription %}
     <div class="row justify-content-center">
         <div class="col">
-            <h2>Dashboard</h2>
             <p>
-                This controller is an example of how to handle a <strong>secured</strong> Symfony controller, accessible via a tab that is created <strong>manually</strong>.
-            <ul>
-                <li>It is secured (you need special permission to access it)</li>
-                <li>It has a Tab that is created manually</li>
-            </ul>
-            </p>
-            <p>
-            <ul data-v-0f8356ce="" class="nav nav-pills"><li class="nav-item"><a href="#/catalog" class="nav-link"> Catalogo prodotti </a></li><li class="nav-item"><a href="#/integrate" class="nav-link"> Canali di vendita </a></li><li class="nav-item" data-v-0f8356ce=""><a href="#/configuration" aria-current="page" class="nav-link router-link-exact-active active"> Configura </a></li><li class="nav-item" data-v-0f8356ce=""><a href="#/help" class="nav-link"> Aiuto </a></li></ul>
+            <ul data-v-0f8356ce="" class="nav nav-pills"><li class="nav-item"><a href="{{link_dashboard}}" class="nav-link"> Home </a></li><li class="nav-item"><a href="{{link_import}}" class="nav-link"> Elenco Importazioni </a></li><li class="nav-item" data-v-0f8356ce=""><a href="{{link_products}}" aria-current="page" class="nav-link"> Prodotti </a></li><li class="nav-item" data-v-0f8356ce=""><a href="{{link_find}}" class="nav-link"> Trova Prodotti </a></li><li class="nav-item" data-v-0f8356ce=""><a href="{{link_settings}}" class="nav-link"> Impostazioni </a></li></ul>
             </p>
         </div>
     </div>
