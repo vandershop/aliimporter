@@ -1,0 +1,31 @@
+{#**
+ * Copyright since 2007 PrestaShop SA and Contributors
+ * PrestaShop is an International Registered Trademark & Property of PrestaShop SA
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License 3.0 (AFL-3.0).
+ * It is also available through the world-wide-web at this URL: https://opensource.org/licenses/AFL-3.0
+ *#}
+
+{% extends '@Modules/democontrollertabs/views/templates/admin/layout.html.twig' %}
+
+{% block controllerTitle %}{{ 'Dashboard'|trans({}, 'Modules.Controllertab.Admin') }}{% endblock %}
+
+{% block controllerDescription %}
+    <div class="row justify-content-center">
+        <div class="col">
+            <h2>Dashboard</h2>
+            <p>
+                This controller is an example of how to handle a <strong>secured</strong> Symfony controller, accessible via a tab that is created <strong>manually</strong>.
+            <ul>
+                <li>It is secured (you need special permission to access it)</li>
+                <li>It has a Tab that is created manually</li>
+            </ul>
+            </p>
+            <p>
+            <ul data-v-0f8356ce="" class="nav nav-pills"><li class="nav-item"><a href="#/catalog" class="nav-link"> Catalogo prodotti </a></li><li class="nav-item"><a href="#/integrate" class="nav-link"> Canali di vendita </a></li><li class="nav-item" data-v-0f8356ce=""><a href="#/configuration" aria-current="page" class="nav-link router-link-exact-active active"> Configura </a></li><li class="nav-item" data-v-0f8356ce=""><a href="#/help" class="nav-link"> Aiuto </a></li></ul>
+            </p>
+        </div>
+    </div>
+{% endblock %}
